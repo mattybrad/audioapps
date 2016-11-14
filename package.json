@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack-dev-server --config webpack.dev.config.js",
+    "cordova": "webpack -p --config webpack.cordova.config.js && cd cordova/basic && cordova build android"
   },
   "author": "matt bradshaw",
   "license": "ISC",

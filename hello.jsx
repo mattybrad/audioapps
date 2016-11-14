@@ -7,4 +7,8 @@ class Hello extends React.Component {
   }
 }
 
-ReactDOM.render(<Hello/>, document.getElementById('hello'));
+window.startApp = function() {
+  ReactDOM.render(<Hello/>, document.getElementById('app'));
+}
+
+if(!window.cordova) window.startApp();
